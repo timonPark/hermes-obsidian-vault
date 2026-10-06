@@ -15,6 +15,8 @@ criteria_met: false
 - 주제 1: 볼트 구조 점검과 재배치
 - 주제 2: Git, 백업, 동기화의 차이
 - 주제 3: `.gitignore`와 첫 커밋 (학습자 Git 경험 있음 → 기본 설명 생략)
+- 주제 4: 일부러 망가뜨리고 Git으로 복구
+- 주제 5: Git 외 백업
 
 ## 2. 배운 것
 - 백업을 시작하기 전에 구조부터 정리한다 (나중에 옮기면 변경 기록이 지저분해짐)
@@ -39,6 +41,9 @@ criteria_met: false
   - 설정 경로 갱신: 첨부파일(`99-System/attachments`), 템플릿 폴더(`99-System/templates`), 일일 노트 템플릿(`99-System/templates/daily`)
   - 현재 문서의 경로 갱신: README, 팀장 역할 규칙, project-context, curriculum. **지난 기록(회차 기록, 진행 기록)은 당시 경로 그대로 둠**
   - 옵시디언 재시작 후에도 새 설정 경로 유지 확인 ✅, 빈 `raw` 폴더 삭제 ✅
+- [x] `git init` → 첫 커밋 `b634e50` "볼트 초기 구조: 학습 0~4회차, 업무 기록 설계 v1" (파일 34개, `workspace.json`·`.DS_Store` 제외 확인)
+- [x] `work-log-schema.md`를 일부러 망가뜨리고(규칙 삭제, `결정`→`확정`) `git diff`로 확인 → `git restore`로 복구 ✅ (복구 후 변경 없음 확인)
+- [x] `git check-ignore -v`: `test.env` → `.gitignore:3:*.env`, `.DS_Store` → `.gitignore:18:.DS_Store`
 
 ## 4. 막힌 점과 질문
 - 
@@ -48,8 +53,8 @@ criteria_met: false
 - [ ] 첨부파일 관리 기준을 볼트 `README.md`에 기록
 
 ## 6. 완료 기준 확인
-- [ ] 잘못 수정한 노트를 Git으로 복구했다
-- [ ] `git check-ignore -v`로 `.env` 테스트 파일과 `.DS_Store`가 제외되는 것을 확인했다
+- [x] 잘못 수정한 노트를 Git으로 복구했다
+- [x] `git check-ignore -v`로 `.env` 테스트 파일과 `.DS_Store`가 제외되는 것을 확인했다
 - [ ] Git 외 백업 1개를 갖췄다
 
 ## 7. 팀장 코멘트

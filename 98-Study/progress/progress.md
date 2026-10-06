@@ -149,3 +149,5 @@
 - 주제 1: 볼트 구조 점검 → [[05-vault-design-git-backup]]
 - 볼트 구조 재배치: `30-Raw`, `98-Study`(학습 자료), `99-System`(템플릿·첨부) → [[README]]
 - 5회차 주제 1 볼트 구조 재배치 완료 (재시작 후 설정 유지 확인)
+- 5회차 주제 3 Git 시작: 첫 커밋 `b634e50`, `.gitignore` 동작 확인
+- 5회차 주제 4 망가뜨리고 복구 완료 (`git diff` → `git restore`)
