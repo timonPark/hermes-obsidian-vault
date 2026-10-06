@@ -1,0 +1,28 @@
+# ── 1. 비밀정보: 절대 커밋하지 않음 ──
+.env
+*.env
+*.key
+*.pem
+secrets/
+# 플러그인 설정에는 API 키가 저장될 수 있음
+# (예: Hermes Agent 옵시디언 플러그인은 API 키를 data.json에 저장)
+.obsidian/plugins/*/data.json
+
+# ── 2. 기기마다 다른 화면 상태·캐시 ──
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ── 3. 운영체제가 만드는 파일 ──
+.DS_Store
+Thumbs.db
+
+# ── 4. 대용량·미디어 첨부 (원본은 별도 저장소에 보관) ──
+99-System/attachments/large/
+*.mp4
+*.mov
+*.m4a
+*.wav
+*.mp3
+*.zip
