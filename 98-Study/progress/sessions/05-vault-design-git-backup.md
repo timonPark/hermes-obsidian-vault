@@ -1,10 +1,10 @@
 ---
 session: 5
 title: 볼트 설계, Git, 백업, 동기화
-status: 진행 중
+status: 완료
 date_start: 2026-10-06
-date_end: 
-criteria_met: false
+date_end: 2026-10-06
+criteria_met: true
 ---
 
 # 05 — 볼트 설계, Git, 백업, 동기화
@@ -46,19 +46,23 @@ criteria_met: false
 - [x] `git check-ignore -v`: `test.env` → `.gitignore:3:*.env`, `.DS_Store` → `.gitignore:18:.DS_Store`
 
 ## 4. 막힌 점과 질문
-- 
+- 팀장이 대신 GitHub에 올릴 수 있는지 → 팀장 환경에 GitHub 계정 연결이 없어 불가. 학습자가 직접 저장소 생성·push
+- [x] `origin` = `github.com/timonPark/hermes-obsidian-vault`, `master` push 완료 (`c24c127`)
+- ⚠️ 확인 결과 저장소가 **Public**으로 생성됨 → 학습자 확인: **실습용이라 일부러 Public으로 둠**
+  - 공개 범위는 학습자가 직접 판단하고 관리하기로 함
 
 ## 5. 회차 사이 과제
-- [ ] Git과 별개의 백업 방법 하나를 정해 적용
+- [x] Git과 별개의 백업 방법 하나를 정해 적용 → GitHub 원격 저장소
 - [ ] 첨부파일 관리 기준을 볼트 `README.md`에 기록
 
 ## 6. 완료 기준 확인
 - [x] 잘못 수정한 노트를 Git으로 복구했다
 - [x] `git check-ignore -v`로 `.env` 테스트 파일과 `.DS_Store`가 제외되는 것을 확인했다
-- [ ] Git 외 백업 1개를 갖췄다
+- [x] Git 외 백업 1개를 갖췄다 (GitHub `timonPark/hermes-obsidian-vault`)
 
 ## 7. 팀장 코멘트
-- 
+- 헤르메스가 노트를 고치기 전에 안전장치 세 가지(구조 정리, Git 이력, 원격 백업)를 모두 갖춤
+- 핵심 습관: **헤르메스가 일하기 전에 커밋 → `git diff`로 보고 → `git restore`로 되돌린다**
 
 ## 8. 다음 회차
 - 6회차: 터미널과 파일 경로
